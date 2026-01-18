@@ -3,21 +3,22 @@
 #repo-conteiner {
     padding: 6rem;
     margin: 6rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
     padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     color: #f3f3f3;
+
 }
 
-.title-conteiner {
+.repotitle-conteiner {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.title-conteiner h1 {
-    font-size: 2.2rem;
+.repo-title {
+    color: var(--color-text);
+    font-size: 2rem;
     font-weight: 300;
-    letter-spacing: 1px;
-    color: var(--color-accent);
+    letter-spacing: 3px;
 }
 
 .content-conteiner-repo {
@@ -29,12 +30,11 @@
 
 .content-conteiner-repo a {
     display: block;
-    border-radius: 10px;
-    padding: 1.2rem 1rem;
+    padding: 1rem;
+    border-left: 1px solid var(--color-accent);
     text-decoration: none;
     color: #cecece;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .content-conteiner-repo a:hover {
@@ -50,7 +50,7 @@
 
 .content-conteiner-repo p {
     margin: 0;
-    color: #8b8b8b;
+    color: var(--color-muted);
     font-size: 0.98rem;
 }
 
@@ -62,25 +62,22 @@
 }
 
 .pagination button {
-    background: var(--color-accent);
+    background-color: var(--color-accent2);
     color: #fdfdfd;
     border: none;
-    border-radius: 6px;
-    padding: 0.5rem 1.2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     font-size: 1rem;
+    border-radius: 2px;
     cursor: pointer;
-    transition: background 0.2s, color 0.2s;
 }
 
 .pagination button:disabled {
-    background: rgb(210, 210, 210);
-    color: #000000;
     cursor: not-allowed;
     opacity: 0.7;
 }
 
 .pagination span {
-    color: #bdbdbd;
+    color: var(--color-muted);
     font-size: 1rem;
 }
 

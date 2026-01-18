@@ -15,3 +15,7 @@
     padding-left: 6rem;
     border-left: 1px solid var(--color-accent);
 }
+
+.homemessage__title{
+    padding-bottom: 2rem;
+}

@@ -1,11 +1,15 @@
+import "../styles/pages/contact.css"
+
 const Contact = () => {
   return (
-    <div id="a" className="conteiner">
-      <section>
-        <div id="b" className="content-conteiner">
-        <div id="c" className="title-conteiner">
-          <h1 style={{ paddingBottom: "0" }}>Contact</h1>
-        </div>
+    <main className="contact__main">
+      <div>
+      </div>
+      <div className="contact__side">
+         <header className="contact__header">
+        <h1>Contact</h1>
+      </header>
+      <section className="contact__section" >
         <p>
           If you want to reach out to me for questions, collaborations, feedback, or just to connect, feel free to use any of the methods below:
         </p>
@@ -30,10 +34,10 @@ const Contact = () => {
         <p>
           I’m open to conversation about tech, learning, personal projects, or anything you find interesting.
         </p>
-      </div>
       </section>
-      
-    </div>
+      </div>
+     
+    </main>
   );
 };
 

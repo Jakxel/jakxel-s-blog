@@ -1,12 +1,13 @@
 import "../styles/pages/about.css"
 const About = () => {
   return (
-    <div id="about-conteiner"className='conteiner'>
-      <section>
-        <div id="about-title"className='title-conteiner'>
+    <main className='about-main'>
+      <div></div>
+      <div className="about-side"><section>
+        <header className='about-header'>
           <h1>Who is Jakxel Carreon?</h1>        
-      </div>
-      <div id="about-content"className='content-conteiner'>
+      </header>
+      <section className='content-section'>
           <p>
             I'm a Computer Systems Engineering student based in Tijuana, Mexico. I have a strong interest in 
             core Computer Science topics, including algorithms, data structures, operating systems, and software design.
@@ -20,9 +21,10 @@ const About = () => {
             Outside of tech, some of my hobbies include reading, playing piano, learning new languages, drawing, meditating, exercising, and sometimes 
             just relaxing with music, anime, or spending time with friends.
           </p>
-      </div>
       </section>
-    </div>
+      </section></div>
+      
+    </main>
   );
 };
 

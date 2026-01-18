@@ -21,7 +21,6 @@ body {
   color: var(--color-text);
 }
 
-/* Media defaults */
 img,
 picture,
 video,
@@ -31,7 +30,6 @@ svg {
   max-width: 100%;
 }
 
-/* Form defaults */
 input,
 button,
 textarea,
@@ -39,56 +37,21 @@ select {
   font: inherit;
 }
 
-/* =========================
-   CSS VARIABLES
-   ========================= */
 
 :root {
-  /* Colors */
   --color-bg: rgba(255,255,255);
-  --color-text: #484848;
+  --color-text: #5a5a5a;
   --color-muted: #6b7280;
   --color-accent: #ff5454;
   --color-accent2: #fd6b6b;
 
-  /* =========================
-   DARK MODE
-   ========================= */
-
-[data-theme="dark"] {
+  [data-theme="dark"] {
   --color-bg: #0f172a;
   --color-text: #e5e7eb;
   --color-muted: #94a3b8;
   --color-border: #1e293b;
   --color-accent: #60a5fa;
-}
-
-  /* Spacing */
-  --space-2xs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2.5rem;
-  --space-2xl: 4rem;
-
-  /* Typography */
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-lg: 1.25rem;
-  --text-xl: 1.75rem;
-
-  /* Radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-
-  /* Motion */
-  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
-  --duration-fast: 150ms;
-  --duration-normal: 250ms;
-  --duration-slow: 400ms;
-}
+}}
 
 /* =========================
    GLOBAL ELEMENT STYLES
@@ -96,8 +59,8 @@ select {
 
 h1,h2,h3,h4,h5,h6{
   font-weight: 300;
-  padding-bottom: 2rem;
 }   
+
 
 p{
   font-size: larger;

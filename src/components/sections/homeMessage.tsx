@@ -8,8 +8,8 @@ return (
             
         </div>
         <div>
-            <header className="homemessage__header">
-            <h1>The Blog of one student in Computer Systems Engineering.</h1>
+        <header className="homemessage__header">
+            <h1 className="homemessage__title" > The Blog of one student in Computer Systems Engineering.</h1>
         </header>
         <section className="homemessage__section">
             <article className="homemessage__article">

@@ -117,14 +117,9 @@ export default function Posts() {
                   key={tag}
                   onClick={() => updateTag(tag)}
                   style={{
-                    marginRight: 4,
-                    cursor: "pointer",
-                    backgroundColor: "#eee",
-                    border: "none",
-                    padding: "2px 6px",
-                    borderRadius: 4
-                  }}
-                >
+              marginRight: 8,
+              backgroundColor: activeTag === tag ? "#ddd" : "#fff"
+            }}>
                   #{tag}
                 </button>
               ))}

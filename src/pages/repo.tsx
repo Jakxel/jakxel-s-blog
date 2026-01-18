@@ -67,8 +67,8 @@ export const GitHubUserReposList: React.FC<GitHubUserReposListProps> = ({ userna
   return (
     <div id="repo-conteiner" >
       <section>
-        <div id="repo-title" className="title-conteiner">
-          <h1>My GitHub repos</h1>
+        <div  className="repotitle-conteiner">
+          <h1 className='repo-title'>My GitHub repos</h1>
         </div>
 
         <div id="repo-content" className="content-conteiner-repo">

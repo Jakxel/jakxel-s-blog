@@ -1,34 +1,29 @@
-import Header from "../components/header";
+import Header from "../components/Header/header";
 import { GitHubUserReposList } from "./repo";
-import About from "./about";
-import RecentPosts from "../components/recentPost";
+import RecentPosts from "../components/sections/recentPost";
+import HomeMessage from "../components/sections/homeMessage";
 import Contact from "./contact";
+import RecentArticles from "../components/sections/recentArticles";
 import { books } from "../data/books";
-import RecentReadBooks from "../components/recentReadBooks";
-import "../styles/pages/home.css"
+import RecentReadBooks from "../components/sections/recentReadBooks";
+import "../styles/sections/cards.css"
 
 function Home(){
     return ( 
-    <div>
-      <Header/>
-      <div className="home">
-        <div id="home-conteiner" className='conteiner'> 
-          <div id="home-title"className="title-conteiner">
-            <h1>The Blog of one student in Computer Systems Engineering.</h1>
-          </div>
-          <div id="home-content" className='content-conteiner'>
-              <p>Here i share ideas, notes, reflections, and anything that sparks curiosity during my daily experiences, study sessions, and technical explorations.</p>
-              <p>I believe that sharing knowledge is one of the best ways to learn and grow. That's why I document my progress here — to clarify my own understanding, keep track of my evolution, and hopefully help or inspire others along the way.</p>
-              <p>You'll find here a mix of technical notes, project breakdowns, thoughts, and software engineering insights, all written from my perspective and personal knowledge.</p>
-          </div>   
+      <div className="container">
+        <Header/>
+        <HomeMessage/>
+        
+        <RecentPosts limit={5}/>
+        <div className="cards-grid">
+          <div className="card"><RecentArticles/></div>
+          <div className="card"><RecentReadBooks books={books.read} limit={3} /></div>
         </div>
+        <GitHubUserReposList username="jakxel"/>
+        <Contact/>
+   
       </div>
-      <About/>
-      <RecentPosts limit={5}/>
-      <RecentReadBooks books={books.read} limit={3} />
-      <GitHubUserReposList username="jakxel"/>
-      <Contact/>
-    </div>
+    
     );
 };
 

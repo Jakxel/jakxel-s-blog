@@ -19,7 +19,7 @@ export const books: Record<BookStatus, Book[]> = {
       title: "Learning Systems Thinking",
       author: "Diana Montalion",
       year: 2008,
-      cover: "/assets/img/books/400w-4248732087.jpeg",
+      cover: "src/assets/img/books/400w-4248732087.jpeg",
       description: "description ....",
       link: "https://www.example.com/learning-systems-thinking",
       tags: ["Systems Thinking", "Productivity"]
@@ -29,7 +29,7 @@ export const books: Record<BookStatus, Book[]> = {
       title: "Clean Code",
       author: "Robert C. Martin",
       year: 2008,
-      cover: "/assets/img/books/clean-code.jpg",
+      cover: "src/assets/img/books/BS13550-OREILLY-Clean-Code-Cookbook-836545324.jpeg",
       description: "description...",
       link: "https://www.example.com/clean-code",
       tags: ["Programming", "Best Practices"]

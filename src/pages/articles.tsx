@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import { articles as allArticles } from '../data/articles'
 import { paginate } from '../utils/paginate'
+import "../styles/pages/articles.css"
 
 const PAGE_SIZE = 6
 

@@ -1,6 +1,7 @@
 import { useState, useMemo } from "react"
 import { books, type Book } from "../data/books"
-import BookCard from "../components/bookCard"
+import BookCard from "../components/sections/bookCard"
+import "../../src/styles/pages/books.css"
 
 export default function BooksPage() {
   const [selectedTag, setSelectedTag] = useState<string>("all")
@@ -20,13 +21,14 @@ export default function BooksPage() {
   }
 
   return (
-    <div id="books-container" className="container">
-      <h1>Books</h1>
-
-      {/* Filtrado por tags */}
-      <div className="book-tag-filter">
+    <main className="books__main">
+      <header className="books__header">
+        <h1>Books</h1>
+      </header>
+         
+      <section className="booksfilter__section">
         {allTags.map(tag => (
-          <button
+          <button 
             key={tag}
             onClick={() => setSelectedTag(tag)}
             className={selectedTag === tag ? "active" : ""}
@@ -34,34 +36,35 @@ export default function BooksPage() {
             {tag === "all" ? "Todos" : `#${tag}`}
           </button>
         ))}
-      </div>
+      </section>
 
-      <section>
-        <h2>Read</h2>
-        <div id="book-info">
+      <section className="books__section">
+        <h1>Read</h1>
+        <article className="books__article">
           {filterBooksByTag(books.read).map(book => (
             <BookCard key={book.id} book={book} />
           ))}
-        </div>
+        </article>
       </section>
 
-      <section>
-        <h2>Reading</h2>
-        <div id="book-info">
+      <section className="books__section">
+        <h1>Reading</h1>
+        <article className="books__article">
           {filterBooksByTag(books.reading).map(book => (
             <BookCard key={book.id} book={book} />
           ))}
-        </div>
+        </article>
       </section>
 
-      <section>
-        <h2>To Read</h2>
-        <div id="book-info">
+      <section className="books__section">
+        <h1>To Read</h1>
+        <article className="books__article">
           {filterBooksByTag(books.toRead).map(book => (
             <BookCard key={book.id} book={book} />
           ))}
-        </div>
+        </article>
       </section>
-    </div>
+     
+    </main>
   )
 }

@@ -1,0 +1,95 @@
+/* src/styles/pages/postDetail.css */
+
+.post__article {
+    margin-inline: 6rem;
+    padding: 6rem;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    text-align: justify;
+
+}
+
+.post__h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #22223b;
+}
+
+.post__time {
+    display: block;
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.markdown-body {
+    line-height: 1.7;
+    color: #2d3142;
+    font-size: 1.1rem;
+}
+
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #4f518c;
+    font-weight: 600;
+}
+
+.markdown-body p {
+    margin: 1.2em 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    margin: 1em 0 1em 2em;
+}
+
+.markdown-body code {
+    background: #f6f8fa;
+    color: #d6336c;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.97em;
+    font-family: 'Fira Mono', 'Consolas', monospace;
+}
+
+.markdown-body pre {
+    background: #232946;
+    color: #eaeaea;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1.5em 0;
+    font-size: 1em;
+}
+
+.markdown-body blockquote {
+    border-left: 4px solid #b8c1ec;
+    background: #f7f7fb;
+    color: #444;
+    margin: 1.5em 0;
+    padding: 0.8em 1.2em;
+    border-radius: 6px;
+}
+
+.markdown-body a {
+    color: #3a86ff;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.markdown-body a:hover {
+    color: #4361ee;
+}
+
+@media (max-width: 800px) {
+    article {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+}

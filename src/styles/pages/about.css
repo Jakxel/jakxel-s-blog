@@ -1,0 +1,42 @@
+/* /src/styles/pages/about.css */
+
+.conteiner {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.title-conteiner {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.title-conteiner h1 {
+    font-size: 2.5rem;
+    color: #22223b;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.content-conteiner {
+    color: #4a4e69;
+    line-height: 1.8;
+}
+
+.content-conteiner p {
+    margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+    .conteiner {
+        padding: 16px 6px;
+    }
+    .title-conteiner h1 {
+        font-size: 1.5rem;
+    }
+    .content-conteiner {
+        font-size: 1rem;
+    }
+}

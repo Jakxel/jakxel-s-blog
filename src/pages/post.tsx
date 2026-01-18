@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { Link, useSearchParams } from "react-router-dom"
 import { loadAllPosts, type Post } from "../utils/loadPost"
 import { paginate } from "../utils/paginate"
+import "../styles/pages/posts.css"
 
 const PAGE_SIZE = 6
 
@@ -69,10 +70,10 @@ export default function Posts() {
   }
 
   return (
-    <main>
-      <h1>Todos los posts</h1>
+    <main className="post-main">
+      <h1 className="post-h1">Post Section</h1>
 
-      <input
+      <input className="post-input"
         type="text"
         placeholder="Loading posts..."
         value={search}
@@ -104,7 +105,7 @@ export default function Posts() {
 
       {pagedPosts.length === 0 && <p>There are not posts that match.</p>}
       {pagedPosts.map(post => (
-        <article key={post.slug} style={{ marginBottom: 24 }}>
+        <article className="post-article" key={post.slug} style={{ marginBottom: 24 }}>
           <h2>
             <Link to={`/posts/${post.slug}`}>{post.title}</Link>
           </h2>

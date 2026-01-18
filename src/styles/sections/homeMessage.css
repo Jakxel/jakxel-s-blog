@@ -1,0 +1,17 @@
+.homemessage__main{
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.homemessage__header{
+    padding-right: 6rem;
+    padding-left: 6rem;
+    border-left: 1px solid var(--color-accent);
+}
+.homemessage__section{
+    text-align: justify;
+    padding-right: 6rem;
+    padding-left: 6rem;
+    border-left: 1px solid var(--color-accent);
+}

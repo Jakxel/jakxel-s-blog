@@ -1,0 +1,68 @@
+.books__main {
+    padding: 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.books__header, .books__header h1{
+    text-align: center;
+    margin-bottom: 0;
+}
+.books__section {
+    margin-bottom: 2.5rem;
+    padding: 3rem 2rem;
+    background: #f8f8f8;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+.books__section:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+.booksfilter__section {
+    margin-inline: 2rem;
+    transition: background 0.2s;
+    text-align: center;
+}
+.booksfilter__section button{
+    margin-inline: 1rem;
+    margin-bottom: 2rem;
+    padding: 0.6em 1.6em;
+    font-size: 1rem;
+    background-color: white;
+    border: none;
+    min-width: 20%;
+    color: #000000;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06); 
+    outline: none;
+}
+
+/* Active state for selected tag button */
+.booksfilter__section button.active {
+    background-color: #ededed;
+    color: var(--color-accent);
+    font-weight: 600;
+}
+.booksfilter__section button:hover,
+.booksfilter__section button:focus {
+    transform: translateY(-2px) scale(1.03);
+}
+.books__article {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+.books__article > * {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.books__article > *:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    transform: translateY(-4px) scale(1.02);
+}

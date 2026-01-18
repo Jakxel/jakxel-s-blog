@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
 import rehypeHighlight from "rehype-highlight"
 import { parseFrontMatter } from "../utils/frontMatter"
+import "../styles/pages/postDetail.css"
 
 export default function PostDetail() {
   const { slug } = useParams()
@@ -21,9 +22,9 @@ export default function PostDetail() {
   if (!post) return <p>Loading...</p>
 
   return (
-    <article>
-      <h1>{post.data.title}</h1>
-      <time>{post.data.date}</time>
+    <article className="post__article">
+      <h1 className="post__h1">{post.data.title}</h1>
+      <time className="post__time">{post.data.date}</time>
 
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}

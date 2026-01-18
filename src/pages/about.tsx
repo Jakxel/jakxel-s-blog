@@ -1,9 +1,9 @@
 import "../styles/pages/about.css"
-
 const About = () => {
   return (
     <div id="about-conteiner"className='conteiner'>
-      <div id="about-title"className='title-conteiner'>
+      <section>
+        <div id="about-title"className='title-conteiner'>
           <h1>Who is Jakxel Carreon?</h1>        
       </div>
       <div id="about-content"className='content-conteiner'>
@@ -21,6 +21,7 @@ const About = () => {
             just relaxing with music, anime, or spending time with friends.
           </p>
       </div>
+      </section>
     </div>
   );
 };

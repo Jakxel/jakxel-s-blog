@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar/navbar";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Articles from "./pages/articles";
 import PostDetail from "./pages/post-detail";
 import Posts from "./pages/post";
-import TagPage from "./pages/tag";
+import TagPage from "./utils/tag";
 import { GitHubUserReposList } from "./pages/repo";
 import BooksPage from "./pages/books";
 import "highlight.js/styles/github.css"

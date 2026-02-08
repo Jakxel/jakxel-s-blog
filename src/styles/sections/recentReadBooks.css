@@ -13,3 +13,16 @@
     margin-bottom: 1.5rem;
     letter-spacing: 0.02em;
 }
+@media (max-width: 768px) {
+    .recentbook__main {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        margin-top: 3rem;
+    }
+    .recentbook__header h1 {
+        font-size: 1.5rem;
+        text-align: start;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+}

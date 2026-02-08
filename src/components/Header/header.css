@@ -14,6 +14,18 @@
     font-size:2.5rem;
     font-weight: 300;
     letter-spacing: 3px;
-    text-align: center;
-    
+    text-align: center; 
+}
+
+@media (max-width: 768px) {
+    .header__container {
+        padding: 2rem;
+        height: 30vh;
+    }
+
+    .title-header {
+        font-size: 1.5rem;
+        padding-inline: 1rem;
+        min-height: 150px;
+    }
 }

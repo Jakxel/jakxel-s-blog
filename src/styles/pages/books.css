@@ -66,3 +66,25 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.12);
     transform: translateY(-4px) scale(1.02);
 }
+@media (max-width: 768px) {
+    .books__main {
+        padding: 1rem 0.5rem;
+    }
+    .books__section {
+        padding: 2rem 1rem;
+    }
+    .booksfilter__section {
+        margin-inline: 0.5rem;
+    }
+    .booksfilter__section button {
+        min-width: unset;
+        width: 100%;
+        margin-inline: 0;
+        margin-bottom: 1rem;
+        font-size: 0.98rem;
+    }
+
+    .books__article > * {
+        padding: 1rem;
+    }
+}

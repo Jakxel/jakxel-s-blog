@@ -110,14 +110,36 @@ nav button:focus {
     background-color: #eee;
 }
 
-@media (max-width: 600px) {
-    main {
-        padding: 0 4px;
+@media (max-width: 768px) {
+    .post-main {
+        margin-inline: 1rem;
+        padding: 8px;
     }
-    article {
-        padding: 12px 6px;
-    }
-    h1 {
+
+    .post-h1 {
         font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    .post-input[type="text"] {
+        font-size: 0.95rem;
+        padding: 6px;
+    }
+
+    .post-article {
+        margin-bottom: 20px;
+        padding: 12px 8px;
+        border-left: none;
+        border-radius: 4px;
+    }
+
+    .post-article h2 {
+        font-size: 1.05rem;
+        margin-bottom: 6px;
+    }
+
+    .post-article button {
+        font-size: 0.9rem;
+        padding: 2px 6px;
     }
 }

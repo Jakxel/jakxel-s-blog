@@ -80,14 +80,32 @@
     color: var(--color-muted);
     font-size: 1rem;
 }
-
-/* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 786px) {
     #repo-conteiner {
         padding: 1rem;
+        margin: 1rem;
     }
+
     .content-conteiner-repo {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .repotitle-conteiner {
+        margin-bottom: 1rem;
+    }
+
+    .repo-title {
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+    }
+
+    .pagination {
+        gap: 0.5rem;
+    }
+
+    .pagination button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
     }
 }

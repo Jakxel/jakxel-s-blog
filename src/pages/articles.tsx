@@ -39,7 +39,8 @@ export default function Articles() {
       <h1>Articles</h1>
 
       <div className="filters">
-        <div className="section-filter">
+       
+        <div className="section-filter"> <p>Section filter:</p>
           {sections.map(section => (
             <button
               key={section}
@@ -52,6 +53,7 @@ export default function Articles() {
         </div>
 
         <div className="tag-filter">
+          <p>Tags filter:</p>
           {tags.map(tag => (
             <button
               key={tag}

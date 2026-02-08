@@ -66,15 +66,25 @@
     text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .bookcard__main {
+        flex-direction: column;
         align-items: center;
-        text-align: center;
-        gap: 1rem;
+        padding: 1rem;
+        max-width: 95vw;
+    }
+
+    .bookcard__img {
+        width: 100px;
+        height: 150px;
     }
 
     .bookcard__section {
         align-items: center;
+        text-align: center;
+    }
+
+    .book-tags {
+        justify-content: center;
     }
 }

@@ -54,3 +54,24 @@
     color: var(--color-accent);
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .card--book {
+        padding: 1rem;
+        margin: 0.75rem 0;
+    }
+
+    .card__title {
+        font-size: 1.1rem;
+    }
+
+    .card__meta,
+    .card__description {
+        font-size: 0.95rem;
+    }
+
+    .card__tags span {
+        font-size: 0.8rem;
+        padding: 0.15em 0.6em;
+    }
+}

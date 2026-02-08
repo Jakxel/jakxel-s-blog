@@ -19,3 +19,23 @@
 .homemessage__title{
     padding-bottom: 2rem;
 }
+
+@media (max-width: 786px) {
+    .homemessage__main {
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      
+    }
+    .homemessage__header,
+    .homemessage__section {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-left: none;
+        text-align: justify;
+    }
+    .homemessage__title {
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}

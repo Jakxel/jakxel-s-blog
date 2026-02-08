@@ -23,3 +23,29 @@
     padding-right:6rem;
     text-align: justify;
 }
+
+@media (max-width: 768px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 2rem 1rem;
+    }
+    .about-side {
+        border-left: none;
+        padding-inline: 1rem;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+    .about-header {
+        margin-inline: 0;
+        text-align: center;
+    }
+    .about-header h1 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+    .about-section {
+        padding-right: 0;
+        text-align: left;
+    }
+}

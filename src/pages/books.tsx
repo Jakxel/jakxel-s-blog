@@ -25,7 +25,6 @@ export default function BooksPage() {
       <header className="books__header">
         <h1>Books</h1>
       </header>
-         
       <section className="booksfilter__section">
         {allTags.map(tag => (
           <button 

@@ -122,3 +122,49 @@
     gap: 8px;
     margin: 32px 0 0 0;
 }
+@media (max-width: 768px) {
+    .articles-catalog {
+        margin-inline: 1rem;
+    }
+
+    .articles-catalog h1 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .filters {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .section-filter,
+    .tag-filter {
+        gap: 4px;
+    }
+
+    .articles-grid {
+        gap: 12px;
+    }
+
+    .article-card {
+        padding: 12px 8px;
+        border-radius: 6px;
+        font-size: 0.95rem;
+    }
+
+    .section {
+        font-size: 0.9rem;
+        padding: 3px;
+        margin-bottom: 0.5rem;
+    }
+
+    .tags {
+        gap: 3px;
+        margin-bottom: 0.25rem;
+    }
+
+    .pagination {
+        gap: 4px;
+        margin: 16px 0 0 0;
+    }
+}

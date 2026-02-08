@@ -10,56 +10,34 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-
-    // examples articles "not real"
   {
     id: '1',
-    title: 'Getting Started with React',
+    title: 'React StarKit',
     description: 'Learn the basics of React and start building components.',
     date: '2024-01-15',
-    section: 'mas reciente',
+    section: 'web',
     tags: ['React', 'Frontend'],
-    slug: 'getting-started-react',
-    pdfLink: '/articles-pdf/getting-started-react.pdf'
+    slug: 'react-starkit',
+    pdfLink: '/public/articles/React-startKit copy.pdf'
   },
   {
     id: '2',
-    title: 'TypeScript Best Practices',
-    description: 'Master TypeScript with these essential best practices.',
-    date: '2024-01-10',
-    section: 'cs topics',
-    tags: ['TypeScript', 'JavaScript'],
-    slug: 'typescript-best-practices',
-    pdfLink: '/articles-pdf/typescript-best-practices.pdf'
+    title: 'Computers Architecture',
+    description: 'Introduction to computer architecture concepts.',
+    date: '2024-02-10',
+    section: 'CS Topics',
+    tags: ['Hardware'],
+    slug: 'computers-architecture',
+    pdfLink: '/public/articles/Computer-Architecture copy.pdf'
   },
   {
     id: '3',
-    title: 'React Hooks in Depth',
-    description: 'A deep dive into React Hooks and their use cases.',
-    date: '2024-02-05',
-    section: 'mas reciente',
-    tags: ['React', 'Hooks'],
-    slug: 'react-hooks-in-depth',
-    pdfLink: '/articles-pdf/react-hooks-in-depth.pdf'
-  },
-  {
-    id: '4',
-    title: 'Low Data Networking',
-    description: 'Techniques for efficient network communication in low data environments.',
-    date: '2024-03-12',
-    section: 'low data',
-    tags: ['Network', 'Optimization'],
-    slug: 'low-data-networking',
-    pdfLink: '/articles-pdf/low-data-networking.pdf'
-  },
-  {
-    id: '5',
-    title: 'Personal Productivity Tips',
-    description: 'Improve your daily productivity with simple habits.',
-    date: '2024-03-20',
-    section: 'personal',
-    tags: ['Productivity', 'Personal Development'],
-    slug: 'personal-productivity-tips',
-    pdfLink: '/articles-pdf/personal-productivity-tips.pdf'
+    title: 'Programming Paradigms',
+    description: 'Overview of programming paradigms and their applications.',
+    date: '2024-03-05',
+    section: 'CS Topics',
+    tags: ['Programming', 'Paradigms'],
+    slug: 'programming-paradigms',
+    pdfLink: '/public/articles/Programming-Paradigms.pdf'
   }
 ]

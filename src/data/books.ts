@@ -12,61 +12,60 @@ export interface Book {
 export type BookStatus = "read" | "reading" | "toRead"
 
 export const books: Record<BookStatus, Book[]> = {
-    // books examples "not real"
   read: [
     {
       id: "1",
-      title: "Learning Systems Thinking",
-      author: "Diana Montalion",
-      year: 2008,
-      cover: "src/assets/img/books/400w-4248732087.jpeg",
-      description: "description ....",
-      link: "https://www.example.com/learning-systems-thinking",
-      tags: ["Systems Thinking", "Productivity"]
-    },
-    {
-      id: "2",
       title: "Clean Code",
       author: "Robert C. Martin",
       year: 2008,
       cover: "src/assets/img/books/BS13550-OREILLY-Clean-Code-Cookbook-836545324.jpeg",
-      description: "description...",
-      link: "https://www.example.com/clean-code",
-      tags: ["Programming", "Best Practices"]
+      description: "A handbook of agile software craftsmanship, focusing on writing readable, maintainable, and efficient code.",
+      link: "https://www.oreilly.com/library/view/clean-code/9780136083238/",
+      tags: ["Programming",]
     },
-    {
-      id: "3",
-      title: "The Pragmatic Programmer",
-      author: "Andrew Hunt & David Thomas",
-      year: 1999,
-      cover: "/assets/img/books/pragmatic-programmer.jpg",
-      description: "description ...",
-      link: "https://www.example.com/pragmatic-programmer",
-      tags: ["Programming", "Career"]
-    }
   ],
   reading: [
     {
-      id: "4",
-      title: "Deep Work",
-      author: "Cal Newport",
-      year: 2016,
-      cover: "/assets/img/books/deep-work.jpg",
-      description: "description.",
-      link: "https://www.example.com/deep-work",
-      tags: ["Productivity", "Focus"]
+      id: "2",
+      title: "Learning Systems Thinking",
+      author: "Diana Montalion",
+      year: 2022,
+      cover: "src/assets/img/books/LST.jpeg",
+      description: "An introduction to systems thinking for software engineers, exploring holistic approaches to solving complex problems.",
+      link: "https://www.oreilly.com/library/view/learning-systems-thinking/9781098134170/",
+      tags: ["Productivity","Systems Thinking"]
+    },
+    {
+      id: "3",
+      title: "The Staff Software Engineer Path",
+      author: "Diana Montalion",
+      year: 2023,
+      cover: "src/assets/img/books/TSEP.jpeg",
+      description: "A guide for software engineers aspiring to staff roles, covering leadership, architecture, and technical strategy.",
+      link: "https://www.oreilly.com/library/view/the-staff-software/9781098134170/",
+      tags: ["Leadership", "Programming"]
     }
   ],
   toRead: [
     {
+      id: "4",
+      title: "The Software Architecture Elevator",
+      author: "Gregor Hohpe",
+      year: 2020,
+      cover: "src/assets/img/books/TSAE.jpeg",
+      description: "Insights into software architecture, bridging the gap between technical and business perspectives.",
+      link: "https://www.oreilly.com/library/view/the-software-architecture/9781492043454/",
+      tags: ["Architecture", "Systems Thinking"]
+    },
+    {
       id: "5",
-      title: "Refactoring",
-      author: "Martin Fowler",
-      year: 1999,
-      cover: "/assets/img/books/refactoring.jpg",
-      description: "description",
-      link: "https://www.example.com/refactoring",
-      tags: ["Programming", "Design"]
-    }
+      title: "Learning Git",
+      author: "Mikael Krief",
+      year: 2021,
+      cover: "src/assets/img/books/LG.jpeg",
+      description: "A practical guide to mastering Git for version control, covering workflows, branching, and collaboration.",
+      link: "https://www.oreilly.com/library/view/learning-git/9781801075733/",
+      tags: ["Productivity"]
+    },
   ]
 }
